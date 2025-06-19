@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UNN Screening Aggregate Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="mobile-menu">
+    <div class="menu-container">
+      <div class="logo"><a href="">UNN POST UTME Screener</a></div>
+      <button class="hamburger" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+      </button>
+        <ul class="menu">
+            <li><a href= ".footer">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+    </div>
+    </nav>
+    <div class="content">
+    <!--Intro text-->
+        <div id="intro_text">
+            <pre>Welcome !!!
+            </pre>   
+            <p>This website is deisgned to help UNN aspirants calculate their aggregate score for the 2025/26 admission process</p>
+            <button onclick="go()">Get Started</button>
+        </div>
+        <div id="userInput">
+            <form onsubmit="return false">
+                <legend>Fill the following correctly</legend>
+                <label for="jamb">Enter JAMB score</label><br>
+                <input type="text" id="jamb">
+                <legend>Add 4 O'level grades</legend>
+                <div class="olevel"><label for="olevel1">Subject 1</label>
+                <select id="olevel1">
+                    <option value="">Select Grade</option>
+                    <option value="90">A1</option>
+                    <option value="80">B2</option>
+                    <option value="70">B3</option>
+                    <option value="60">C4</option>
+                    <option value="50">C5</option>
+                    <option value="40">C6</option>
+                    <option value="0">D7</option>
+                    <option value="0">E8</option>
+                    <option value="0">F9</option>
+                </select><br></div>
+                <div class="olevel"><label for="olevel2">Subject 2</label>
+                <select id="olevel2">
+                    <option value="">Select Grade</option>
+                    <option value="90">A1</option>
+                    <option value="80">B2</option>
+                    <option value="70">B3</option>
+                    <option value="60">C4</option>
+                    <option value="50">C5</option>
+                    <option value="40">C6</option>
+                    <option value="0">D7</option>
+                    <option value="0">E8</option>
+                    <option value="0">F9</option>
+                </select><br></div>
+                <div class="olevel"><label for="olevel3">Subject 3</label>
+                <select id="olevel3">
+                    <option value="">Select Grade</option>
+                    <option value="90">A1</option>
+                    <option value="80">B2</option>
+                    <option value="70">B3</option>
+                    <option value="60">C4</option>
+                    <option value="50">C5</option>
+                    <option value="40">C6</option>
+                    <option value="0">D7</option>
+                    <option value="0">E8</option>
+                    <option value="0">F9</option>
+                </select><br></div>
+                <div class="olevel"><label for="olevel4">Subject 4</label>
+                <select id="olevel4">
+                    <option value="">Select Grade</option>
+                    <option value="90">A1</option>
+                    <option value="80">B2</option>
+                    <option value="70">B3</option>
+                    <option value="60">C4</option>
+                    <option value="50">C5</option>
+                    <option value="40">C6</option>
+                    <option value="0">D7</option>
+                    <option value="0">E8</option>
+                    <option value="0">F9</option>
+                </select><br></div>
+                <legend>Tick the box if you are using one-sitting</legend>
+                <label for="sitting">One sitting</label>
+                <input type="checkbox" id="sitting"><br>
+                <h1 id="message"></h1>
+                <button onclick="start()">Calculate</button>
+            </form>
+            <h3 id="message"></h3>
+        </div>
+        <div id="about">
+        <h1>About The Developer</h1>
+        <img src="stan1.JPG" alt="Obimma Stanley">
+        <p>Hi there, I'm Obimma Stanley, an undergraduate at the department of Computer Sciences, UNN. I'm a passionate developer with a love for crafting problem-solving applications such as this Screening Aggregate calculator.</p>
+        <p>For collaborations or contributions, contact me on my social media handles below</p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Stanley Obimma. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: red;"></i> by Stanley</p>
+  <a href="https://facebook.com/stanley.obimma.37872" aria-label="Facebook" style="color:#0a66c2"><i class="fab fa-facebook"></i></a>
+     <a href="https://x.com/stanleyjv4" aria-label="X" style="color :black"><i class="fa-brands fa-x"></i></a>
+  <a href="https://linkedin.com/in/stanley-obimma-b978b6299" aria-label="LinkedIn"><i class="fab fa-linkedin" style="color:#0a66c2"></i></a>
+  <a href="https://wa.me/2349019889555" aria-label="Whatsapp"><i class="fab fa-whatsapp" style="  color: #169220;
+"></i></a>
+
+    </footer>
+    
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

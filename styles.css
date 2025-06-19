@@ -1,0 +1,221 @@
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mobile-menu {
+  
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.menu-container {
+  top: 0;
+  background: linear-gradient(#169220, rgb(29, 230, 29));
+  color: white;
+  padding: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.logo {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block; /
+}
+
+.menu {
+  list-style: none;
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  width: 80%;
+  height: calc(100vh - 60px);
+  padding-left: 5px;
+  background: linear-gradient(#169220, rgb(29, 230, 29));
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  transition: left 0.3s ease;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.menu li {
+  margin: 1.5rem 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #f0a500;
+}
+
+/* Desktop menu */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 1rem;
+  }
+}
+
+#intro_text,#about{
+    display: block;
+    color: white;
+    background: linear-gradient(#169220, rgb(29, 230, 29));
+    height: auto;
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1s;
+    
+}
+.content {
+  flex: 1;
+}
+  #userInput{
+    display: none;
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background: linear-gradient(#169220, rgb(29, 230, 29));
+    color: white
+ 
+  }
+  legend{
+    text-align: center;
+    font-family: Arial,  sans-serif;
+    margin: 10px auto;
+
+  }
+  .olevel{
+    margin: 10px auto;
+
+  }
+  button{
+    background: linear-gradient(green,rgb(81, 241, 121));
+    margin: 10px 0;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+    border: none;
+    color: white;
+  }
+  button:hover{
+    background: linear-gradient(green,rgb(3, 247, 64));
+
+  }
+  button:active{
+    background: green;
+  }
+  pre{
+  font-weight: 10px;
+  font-size: 20px;
+text-align: center;}
+label{
+    font-size: larger;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+select{
+  outline: none;
+  border-radius: 15px;
+  margin: auto 10px;
+}
+img{
+  max-width: 40%;
+  border-radius: 50px;
+}
+ input:not([type="checkbox"]){
+    margin-bottom: 10px;
+    background: local;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    height: 30px;
+    width: 40%;
+    color: whitesmoke;
+    
+  }
+
+  .social-media {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+
+.footer a {
+  font-size: 24px;
+  transition: color 0.3s;
+
+}
+
+.footer a:hover {
+  color: #1877f2; 
+}
+
+.social-media a:hover .fa-twitter { color: #1da1f2; }
+.social-media a:hover .fa-instagram { color: #e4405f; }
+.social-media a:hover .fa-linkedin { color: #0a66c2; }
+.social-media a:hover .fa-youtube { color: #ff0000; }
+
+  .footer{
+    display: block;
+    background: linear-gradient(#169220, rgb(29, 230, 29));
+    color: white;
+    margin: 30px auto;
+    width :100%;
+    margin-bottom: 0;
+    padding: 20px;
+    text-align: center ;
+    align-items: center;
+  }
