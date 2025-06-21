@@ -171,6 +171,10 @@ select{
   border-radius: 15px;
   margin: auto 10px;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 img{
   max-width: 40%;
   border-radius: 50px;
